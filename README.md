@@ -13,9 +13,9 @@ At the bottom of this document you’ll find a solution. But try yourself first!
 
 - **Hint 1:** The answer is not a single number but a distribution over probable rates of sign-up.
 
-- **Hint 2:** As part of your generative model you’ll want to use the binomial distribution, which you can sample from in R using the `rbinom(n, size, prob)`. The binomial distribution simulates the following process `n` times: The number of “successes” when performing size trials, where the probability of “success” is prob.
+- **Hint 2:** As part of your generative model you’ll want to use the binomial distribution, which you can sample from in R using the `rbinom(n, size, prob)`. The binomial distribution simulates the following process `n` times: The number of “successes” when performing size trials, where the probability of “success” is `prob`.
 
-- **Hint 3:** A commonly used prior for the unknown probability of success in a binomial distribution is a uniform distribution from 0 to 1. You can draw from this distribution by running `runif(1, min = 0, max = 1)`
+- **Hint 3:** A commonly used prior for the unknown probability of success in a binomial distribution is a uniform distribution from `0` to `1`. You can draw from this distribution by running `runif(1, min = 0, max = 1)`
 
 - **Hint 4:** Here is a code scaffold that you can build upon.
 
